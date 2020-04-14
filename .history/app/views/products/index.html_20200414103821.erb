@@ -1,0 +1,9 @@
+<%= form_for @cart do |f| %>
+<%= f.label "Item Name" %> <br>
+<%= f.text_field :name %> <br>
+<%= f.submit %>
+<% end %>
+<br> <br>
+<%= Item.each do |i| %>
+<%= i.name %>
+<% end %>

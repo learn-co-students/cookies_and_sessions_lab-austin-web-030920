@@ -1,0 +1,9 @@
+<%= form_with(url: "/index", method: "post") do %>
+  <%= label_tag(:q, "Add item to cart") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Add") %>
+<% end %>
+<br> <br>
+<% Item.each do |i| %>
+<%= i.name %>
+<% end %>
